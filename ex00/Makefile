@@ -1,7 +1,7 @@
 SRC			= megaphone.cpp
 #OBJ		= $(SRC:.cpp=.o)
 NAME		= megaphone
-CXXFLAGS	= -Wextra -Wall -Werror -Wpedantic
+CXXFLAGS	= -Wextra -Wall -Werror -Wpedantic -g
 
 $(NAME)	: $(SRC) Makefile
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(SRC)
