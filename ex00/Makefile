@@ -1,5 +1,4 @@
 SRC			= megaphone.cpp
-#OBJ		= $(SRC:.cpp=.o)
 NAME		= megaphone
 CXXFLAGS	= -Wextra -Wall -Werror -Wpedantic -g
 
