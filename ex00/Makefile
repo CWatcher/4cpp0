@@ -1,5 +1,6 @@
 SRC			= megaphone.cpp
 NAME		= megaphone
+CXX			= clang++
 CXXFLAGS	= -Wextra -Wall -Werror -Wpedantic -g
 
 $(NAME)	: $(SRC) Makefile
