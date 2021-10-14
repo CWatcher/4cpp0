@@ -8,7 +8,8 @@
 # * LOUD AND UNBEARABLE FEEDBACK NOISE *
 # $>
 
-make > /dev/null && echo make ok!
+make > /dev/null && echo make ok! \
+	|| exit 1
 
 ARG='shhhhh... I think the students are asleep...'
 #ARG='a'
