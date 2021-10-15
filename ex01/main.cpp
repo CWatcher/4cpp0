@@ -1,14 +1,21 @@
 #include "PhoneBook.hpp"
 #include <iostream>
-
 int	main()
 {
 	PhoneBook	phoneBook;
+	std::string	input;
+	Contact 	c;
 
-	phoneBook.contacts[0].firstName = "abc";
-	Contact c;
-	std::string s = "aaa";
-	c.setFirstName(s);
-	s = "bbb";
-	std::cout << c.firstName << '\n';
+	while (std::cin && input != "EXIT")
+	{
+		std::cout << "Command < ";
+		std::cin >> input;
+		if (input == "ADD")
+		{
+			std::cout << "First name << ";
+			std::cin >> input;
+			c.setFirstName(input);
+		}
+	}
+	std::cout << "\n";
 }
