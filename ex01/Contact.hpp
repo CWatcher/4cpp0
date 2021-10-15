@@ -8,7 +8,7 @@ class Contact
 public:
 	std::string	getFirstName();
 	void		setFirstName(std::string FirstName);
-//private:
+private:
 	std::string	firstName;
 	std::string	lastName;
 	std::string	nickname;
