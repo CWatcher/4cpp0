@@ -9,7 +9,7 @@ int	main()
 	while (std::cin && input != "EXIT")
 	{
 		std::cout << "Command < ";
-		std::cin >> input;
+		std::getline(std::cin, input);
 		if (input == "ADD")
 		{
 			std::cout << "First name << ";
