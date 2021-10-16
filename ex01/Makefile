@@ -4,7 +4,7 @@ SRC			=	Contact.cpp		\
 OBJ			=	$(SRC:.cpp=.o)
 NAME		=	PhoneBook
 CXX			= 	clang++
-CXXFLAGS	= 	-Wextra -Wall -Werror -Wpedantic -g -fsanitize=address
+CXXFLAGS	= 	-Wextra -Wall #-Werror -Wpedantic -g -fsanitize=address
 
 %.o		: %.cpp Makefile
 	$(CXX) $(CXXFLAGS) -MMD -c $<

@@ -10,10 +10,10 @@ int	main()
 	{
 		std::cout << "Command < ";
 		std::getline(std::cin, input);
-		if (input == "ADD")
+		if (input == "ADD" || input == "A")
 			phoneBook.loadContact();
-		else if (input == "SEARCH")
-			;
+		else if (input == "SEARCH" || input == "S")
+			phoneBook.printContacts();
 
 	}
 	std::cout << "\n";
