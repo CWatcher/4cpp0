@@ -11,11 +11,10 @@ int	main()
 		std::cout << "Command < ";
 		std::getline(std::cin, input);
 		if (input == "ADD")
-		{
-			std::cout << "First name << ";
-			std::cin >> input;
-			c.setFirstName(input);
-		}
+			phoneBook.loadContact();
+		else if (input == "SEARCH")
+			;
+
 	}
 	std::cout << "\n";
 }
