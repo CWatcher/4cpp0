@@ -1,22 +1,27 @@
 #include "PhoneBook.hpp"
 #include <iostream>
 
-PhoneBook::PhoneBook(): i(0) {};
-
+PhoneBook::PhoneBook(): _i(0)
+{}
 void	PhoneBook::loadContact()
 {
 	std::string	input;
 
 	std::cout << "First name << ";
 	std::getline(std::cin, input);
-	contacts[i].setFirstName(input);
-	i++;
-	i %= n;
+	contacts[_i].setFirstName(input);
+	_i++;
+	_i %= _n;
 }
-void	PhoneBook::printContacts()
+void	PhoneBook::listContacts()
 {
 	std::string	contactField;
-	for (Contact &contact: contacts)
-		if (contact.getFirstName() != "")
-			std::cout << contact.getFirstName() << std::endl;
+	for (int i = 0; i < _n; i++)
+		if (contacts[i].getFirstName() != "")
+			std::cout << contacts[i].getFirstName() << std::endl;
+	std::cout << "Index << ";
+	int index;
+	try {std::cin >> index;}
+	catch (...) {std::cout << "Exception!\n";}
+	std:: cout << index << std::endl;
 }

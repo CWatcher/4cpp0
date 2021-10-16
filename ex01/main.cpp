@@ -6,14 +6,14 @@ int	main()
 	std::string	input;
 	Contact 	c;
 
-	while (std::cin && input != "EXIT")
+	while (!std::cin.eof() && input != "EXIT")
 	{
 		std::cout << "Command < ";
 		std::getline(std::cin, input);
 		if (input == "ADD" || input == "A")
 			phoneBook.loadContact();
 		else if (input == "SEARCH" || input == "S")
-			phoneBook.printContacts();
+			phoneBook.listContacts();
 
 	}
 	std::cout << "\n";
