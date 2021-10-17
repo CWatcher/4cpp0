@@ -9,21 +9,31 @@ void	PhoneBook::loadContact()
 {
 	std::string	input;
 
+	if (std::cin) {
 	std::cout << "First name << ";
 	std::getline(std::cin, input);
 	_contacts[_i].setFirstName(input);
+	}
+	if (std::cin) {
 	std::cout << "Last name << ";
 	std::getline(std::cin, input);
 	_contacts[_i].setLastName(input);
+	}
+	if (std::cin) {
 	std::cout << "Nickname << ";
 	std::getline(std::cin, input);
 	_contacts[_i].setNickname(input);
+	}
+	if (std::cin) {
 	std::cout << "Phone number << ";
 	std::getline(std::cin, input);
 	_contacts[_i].setPhoneNumber(input);
+	}
+	if (std::cin) {
 	std::cout << "Darkest secret << ";
 	std::getline(std::cin, input);
 	_contacts[_i].setDarkestSecret(input);
+	}
 	_i++;
 	_i %= _n;
 }
