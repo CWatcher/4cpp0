@@ -10,29 +10,29 @@ void	PhoneBook::loadContact()
 	std::string	input;
 
 	if (std::cin) {
-	std::cout << "First name << ";
-	std::getline(std::cin, input);
-	_contacts[_i].setFirstName(input);
+		std::cout << "First name << ";
+		std::getline(std::cin, input);
+		_contacts[_i].setFirstName(input);
 	}
 	if (std::cin) {
-	std::cout << "Last name << ";
-	std::getline(std::cin, input);
-	_contacts[_i].setLastName(input);
+		std::cout << "Last name << ";
+		std::getline(std::cin, input);
+		_contacts[_i].setLastName(input);
 	}
 	if (std::cin) {
-	std::cout << "Nickname << ";
-	std::getline(std::cin, input);
-	_contacts[_i].setNickname(input);
+		std::cout << "Nickname << ";
+		std::getline(std::cin, input);
+		_contacts[_i].setNickname(input);
 	}
 	if (std::cin) {
-	std::cout << "Phone number << ";
-	std::getline(std::cin, input);
-	_contacts[_i].setPhoneNumber(input);
+		std::cout << "Phone number << ";
+		std::getline(std::cin, input);
+		_contacts[_i].setPhoneNumber(input);
 	}
 	if (std::cin) {
-	std::cout << "Darkest secret << ";
-	std::getline(std::cin, input);
-	_contacts[_i].setDarkestSecret(input);
+		std::cout << "Darkest secret << ";
+		std::getline(std::cin, input);
+		_contacts[_i].setDarkestSecret(input);
 	}
 	_i++;
 	_i %= _n;
@@ -65,7 +65,7 @@ int PhoneBook::_readIndex()
 {
 
 	bool	index_is_empty = true;
-	int		index;
+	int		index = -1;
 
 	while (std::cin && index_is_empty)
 	{
@@ -82,6 +82,6 @@ int PhoneBook::_readIndex()
 void PhoneBook::showContact()
 {
 	int index = _readIndex();
-
-	std::cout << _contacts[index].getFirstName() << std::endl;
+	if (index >= 0 && index << _n)
+		std::cout << _contacts[index].getFirstName() << std::endl;
 }
