@@ -8,13 +8,14 @@ int	main()
 
 	while (!std::cin.eof() && input != "EXIT")
 	{
-		std::cout << "Command < ";
+		std::cout << "Command (ADD | SEARCH | EXIT) < ";
 		std::getline(std::cin, input);
 		if (input == "ADD" || input == "A")
 			phoneBook.loadContact();
-		else if (input == "SEARCH" || input == "S")
+		else if (input == "SEARCH" || input == "S") {
 			phoneBook.listContacts();
-
+			phoneBook.showContact();
+		}
 	}
 	std::cout << "\n";
 }
