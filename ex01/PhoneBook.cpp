@@ -15,13 +15,14 @@ void	PhoneBook::loadContact()
 }
 void	PhoneBook::listContacts()
 {
-	std::string	contactField;
 	for (int i = 0; i < _n; i++)
 		if (contacts[i].getFirstName() != "")
 			std::cout << contacts[i].getFirstName() << std::endl;
+}
+void PhoneBook::showContact()
+{
+	std::string	input;
+
 	std::cout << "Index << ";
-	int index;
-	try {std::cin >> index;}
-	catch (...) {std::cout << "Exception!\n";}
-	std:: cout << index << std::endl;
+	std::getline(std::cin, input);
 }
