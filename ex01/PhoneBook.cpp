@@ -83,5 +83,11 @@ void PhoneBook::showContact()
 {
 	int index = _readIndex();
 	if (index >= 0 && index << _n)
-		std::cout << _contacts[index].getFirstName() << std::endl;
+	{
+		std::cout << "First name    : " << _contacts[index].getFirstName() << std::endl;
+		std::cout << "Last name     : " << _contacts[index].getLastName() << std::endl;
+		std::cout << "Nickname      : " << _contacts[index].getNickname() << std::endl;
+		std::cout << "Phone number  : " << _contacts[index].getPhoneNumber() << std::endl;
+		std::cout << "Darkest secret: " << _contacts[index].getDarkestSecret() << std::endl;
+	}
 }

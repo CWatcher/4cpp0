@@ -17,5 +17,5 @@ int	main()
 			phoneBook.showContact();
 		}
 	}
-	std::cout << "\n";
+	std::cout << std::endl;
 }
