@@ -6,7 +6,7 @@ int	main()
 	std::string	input;
 	Contact 	c;
 
-	while (!std::cin.eof() && input != "EXIT")
+	while (std::cin && input != "EXIT")
 	{
 		std::cout << "Command (ADD | SEARCH | EXIT) < ";
 		std::getline(std::cin, input);
