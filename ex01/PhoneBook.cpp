@@ -82,7 +82,7 @@ int PhoneBook::_readIndex()
 void PhoneBook::showContact()
 {
 	int index = _readIndex();
-	if (index >= 0 && index << _n)
+	if (index >= 0 && index < _n)
 	{
 		std::cout << "First name    : " << _contacts[index].getFirstName() << std::endl;
 		std::cout << "Last name     : " << _contacts[index].getLastName() << std::endl;
