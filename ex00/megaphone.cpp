@@ -6,7 +6,9 @@ int main(int, char *argv[])
 	if (!*++argv)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	for (; *argv; argv++)
-		for (char *s = *argv; *s; s++)
-			std::cout << (char)toupper(*s);
+	{
+		std::string	s(*argv);
+		std::cout << std::uppercase << s;
+	}
 	std::cout << std::endl;
 }
